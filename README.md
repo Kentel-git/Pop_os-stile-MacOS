@@ -21,6 +21,7 @@ mkdir ~/.themes
 mkdir ~/.icons
 mv ~/MacOS/themes/* ~/.themes
 mv ~/MacOS/icons/* ~/.icons
+sudo mv ~/MacOS/walls/* /usr/share/backgrounds/
 ```
 
 ### Gnome Extensions
@@ -28,11 +29,10 @@ mv ~/MacOS/icons/* ~/.icons
 Enable Extensions by visiting https://extensions.gnome.org/ install add-on and reload browser
 
 Install the Following Extensions
-- User Themes
-- Frippery Move Clock
-- Dynamic Panel Transparency
-- Compiz Windows Effect
-- Panel OSD
+- User Themes - https://extensions.gnome.org/extension/19/user-themes/
+- Frippery Move Clock - https://extensions.gnome.org/extension/2/move-clock/
+- Dynamic Panel Transparency - https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
+- Panel OSD - https://extensions.gnome.org/extension/708/panel-osd/
 
 ### Gnome Tweaks
 
@@ -43,7 +43,7 @@ gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-dark"
 gsettings set org.gnome.desktop.wm.preferences theme "WhiteSur-dark"
 gsettings set org.gnome.desktop.interface icon-theme 'BigSur'
 gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors-light'
-gsettings set org.gnome.desktop.background picture-uri 'file:///~/MacOS/walls/macOS-BS3.jpg'
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/macOS-BS3.jpg'
 ```
 
 ### Manual Extension Configurations

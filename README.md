@@ -19,8 +19,8 @@ sudo apt install git gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell 
 git clone https://github.com/ChrisTitusTech/Linux-MacOS-GNOME.git ~/MacOS
 mkdir ~/.themes
 mkdir ~/.icons
-mv ~/MacOS/themes ~/.themes
-mv ~/MacOS/icons ~/.icons
+mv ~/MacOS/themes/* ~/.themes
+mv ~/MacOS/icons/* ~/.icons
 ```
 
 ### Gnome Extensions

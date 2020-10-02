@@ -24,16 +24,6 @@ mv ~/MacOS/icons/* ~/.icons
 sudo mv ~/MacOS/walls/* /usr/share/backgrounds/
 ```
 
-### Gnome Extensions
-
-Enable Extensions by visiting https://extensions.gnome.org/ install add-on and reload browser
-
-Install the Following Extensions
-- User Themes - https://extensions.gnome.org/extension/19/user-themes/
-- Frippery Move Clock - https://extensions.gnome.org/extension/2/move-clock/
-- Dynamic Panel Transparency - https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
-- Panel OSD - https://extensions.gnome.org/extension/708/panel-osd/
-
 ### Gnome Tweaks
 
 ```bash
@@ -44,17 +34,8 @@ gsettings set org.gnome.desktop.wm.preferences theme "WhiteSur-dark"
 gsettings set org.gnome.desktop.interface icon-theme 'BigSur'
 gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors-light'
 gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/macOS-BS3.jpg'
+gsettings get org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/macOS-BS1.jpg'
 ```
-
-### Manual Extension Configurations
-
-- Panel OSD - Change Horizontal and Vertical to 98
-- Cairo Dock - Set to Startup Applications
-- Cairo Dock Themes - Import all gz files to Cairo configure in ~/MacOS/cairo
-- Cairo Dock Configure - Turn of Icon effects and animations and hide dock when overlapping windows
-- Cairo Dock Launchpad - Add Custom Launchpad Shortcut `dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.shellDBusService.ShowApplications();'`
-- Disable Ubuntu Dock (Not Needed on PopOS)
-- Dynamic Panel Transparency - Background Tab - Max Opacity 100 - Min Opacity 50
 
 ### Albert
 
@@ -70,3 +51,23 @@ sudo apt install albert -y
 - Set Hotkey - Meta + F
 - Set Theme Arc Dark Blue
 - Enable Albert Extensions
+
+### Gnome Extensions
+
+Enable Extensions by visiting https://extensions.gnome.org/ install add-on and reload browser
+
+Install the Following Extensions
+- User Themes - https://extensions.gnome.org/extension/19/user-themes/
+- Frippery Move Clock - https://extensions.gnome.org/extension/2/move-clock/
+- Dynamic Panel Transparency - https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
+- Panel OSD - https://extensions.gnome.org/extension/708/panel-osd/
+
+### Manual Extension Configurations
+
+- Panel OSD - Change Horizontal and Vertical to 98
+- Cairo Dock - Set to Startup Applications
+- Cairo Dock Themes - Import all gz files to Cairo configure in ~/MacOS/cairo
+- Cairo Dock Configure - Turn of Icon effects and animations and hide dock when overlapping windows
+- Cairo Dock Launchpad - Add Custom Launchpad Shortcut `dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.shellDBusService.ShowApplications();'`
+- Disable Ubuntu Dock (Not Needed on PopOS)
+- Dynamic Panel Transparency - Background Tab - Max Opacity 100 - Min Opacity 50

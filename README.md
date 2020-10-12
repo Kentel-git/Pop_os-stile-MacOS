@@ -16,7 +16,7 @@ _Source Files in this project_
 
 ```bash
 sudo apt install git gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell cairo-dock -y
-git clone https://github.com/ChrisTitusTech/Linux-MacOS-GNOME.git ~/MacOS
+git clone https://github.com/Kentel-git/Pop_os-stile-MacOS ~/MacOS
 mkdir ~/.themes
 mkdir ~/.icons
 mv ~/MacOS/themes/* ~/.themes
